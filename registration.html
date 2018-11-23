@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="root/styles/reset.css">
+        <link rel="stylesheet" href="root/styles/nysl_3.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper"> 
+            <!--Navigation-->
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" >About</a>
+                    </li>
+                    <li>
+                        <a href="game_info.html">Information</a>
+                    </li>
+                    <li>
+                        <a href="rules.html">Rules</a>
+                    </li>
+                    <li>
+                        <a href="registration.html">Registration</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Top Container-->
+            <section class="top-container">
+                <header class="main-picture">
+                    <h2>Northside Youth <br> Soccer Leauge</h2>      
+                </header>
+            </section> 
+            <!-- Sub-Header Section -->
+                <div class="sub-header">
+                    <h1>Registration</h1>
+                </div>
+            <!--Boxes Section-->
+            <form action="show_data.html" class="simple-form" method="GET">
+                <div class="registration-form">
+                    <div class="block"> 
+                        <div><label class="label" for="first-name">First Name:</label><input type="text" name="first_name" id="first-name" placeholder="First Name" autofocus required></div>
+                        <div><label class="label" for="first-name">Last Name:</label><input type="text" id="last-name" name="last_name" placeholder="Last Name" required></div>
+                    </div>    
+                    <div class="block">
+                        <div><label class="label" for="address">Address:</label><input type="text" id ="address" name="address" placeholder="Address" ></div>
+                        <div ><label class="label" for="city">City:</label><input type="text" id="city" name="city" placeholder="City"></div>
+                        <div ><label class="label" for="zip">Zip Code:</label><input type="number" id="zip" name="zip" placeholder="Zip Code"></div>
+                    </div>
+                    <div class="block">
+                        <div ><label class="label" for="birth-date"> Birth Date:</label><input type="date" id="birth-date" name="birth-date"></div>
+                        <div ><label class="label" for="gender">Gender:</label> 
+                            <input type="radio" id="gender-female" name="gender" value="female"><label for="gender">Female</label> 
+                            <input type="radio" id="gender-male" name="gender" value="male"><label for="gender">Male</label> 
+                        </div>
+                    </div>
+                    <div class="block"> 
+                        <div >
+                            <label class="label" for="grade">Grade:</label> 
+                            <input type="radio" id="grade-pre" name="grade" value="pre"><label for="grade"> Pre-School </label> 
+                            <input type="radio" id="grade-1" name="grade" value="1"><label for="grade"> 1<sup>st</sup> </label>
+                            <input type="radio" id="grade-2" name="grade" value="2"><label for="grade"> 2<sup>nd</sup></label>
+                            <input type="radio" id="grade-3" name="grade" value="3"><label for="grade"> 3<sup>rd</sup></label>
+                            <input type="radio" id="grade-4" name="grade" value="4"><label for="grade"> 4<sup>th</sup></label>
+                            <input type="radio" id="grade-5" name="grade" value="5"><label for="grade"> 5<sup>th</sup></label>
+                        </div>     
+                    </div>
+                    <div class="block">
+                        <div >
+                            <label class="label" for="guardian">Parent/Guardian:</label> <input type="text" id="guardian" name="guardian" placeholder="Parent/Guardian">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div ><label class="label" for="phone"> Contact Phone:</label> <input type="number" id="phone" name="phone" placeholder="Phone"></div>
+                        <div ><label class="label" for="email">Contact Email:</label>  <input type="email" id="email" name="email" placeholder="Email"></div>
+                    </div>
+                    <div class="block label">
+                        Which elementary schools do you live near?
+                        <label class="label" for="first-closest"> First Closest School:</label>
+                        <select name="first-closest">
+                            <option>AJ Katzenmaier</option>
+                            <option>Greenbay</option>
+                            <option>Howard A Yeager</option>
+                            <option>Marjorie P Hart</option>
+                            <option>North Elementary</option>
+                            <option>South Elementary</option>
+                        </select>
+                        <label class="label" for="second-closest"> Second Closest School:</label>
+                        <select name="second-closest">
+                            <option>AJ Katzenmaier</option>
+                            <option>Greenbay</option>
+                            <option>Howard A Yeager</option>
+                            <option>Marjorie P Hart</option>
+                            <option>North Elementary</option>
+                            <option>South Elementary</option>
+                        </select> 
+                    </div>
+                    <div class="block">
+                        What position(s) do you normally play? (check all that apply)
+                        <div >
+                            <input type="checkbox" id="position-forward" name="usual-position" value="forward"> <label for="usual-position">Forward </label> 
+                            <input type="checkbox" id="position-midfield" name="usual-position" value="midfield"><label for="usual-position"> Midfield</label>
+                            <input type="checkbox" id="position-defense" name="usual-position" value="defense"><label for="usual-position"> Defense</label>
+                            <input type="checkbox" id="position-goalkeeper" name="usual-position" value="goalkeeper"><label for="usual-position">Goalkeeper</label> 
+                        </div>
+                    </div>
+                    <div class="block">
+                        What position(s) do you want to play? (check all that apply)
+                        <div>
+                            <input type="checkbox" name="new-position" value="forward"><label for="new-position">Forward </label>
+                            <input type="checkbox" name="new-position" value="midfield"><label for="new-position">Midfield</label>
+                            <input type="checkbox" name="new-position" value="defense"><label for="new-position">Defense </label>
+                            <input type="checkbox" name="new-position" value="goalkeeper"><label for="new-position">Goalkeeper</label>
+                        </div>
+                    </div>    
+                    <div class="block">
+                        <input type="checkbox" id="has-uniform" name="uniform" value="already_has"><label class="bold" for="has-uniform">Already Have a Uniform</label>
+                        <div>
+                            <label class="label" >Jersey Size:</label>
+                            <p><input type="radio" name="jersey-size" value="youth_small"><label for="jersey-size">  Youth Small</label><input type="radio" name="jersey-size" value="medium"> <label for="jersey-size">  Medium</label></p>
+                            <p><input type="radio" name="jersey-size" value="youth_medium"><label for="jersey-size">  Youth Medium</label><input type="radio" name="jersey-size" value="large"><label for="jersey-size">  Large</label></p>
+                            <p><input type="radio" name="jersey-size" value="youth_large"><label for="jersey-size">  Youth Large</label><input type="radio" name="jersey-size" value="extra_large"><label for="jersey-size">  Extra-Large</label></p>
+                            <p><input type="radio" name="jersey-size" value="small"><label for="jersey-size">  Small</label></p>
+                        </div> 
+                        <div > 
+                            <label >Shorts Size:</label> 
+                            <p><input type="radio" name="shorts-size" value="youth_small"><label for="shorts-size">  Youth Small</label><input type="radio" name="shorts-size" value="medium"> <label for="shorts-size">  Medium</label></p>
+                            <p><input type="radio" name="shorts-size" value="youth_medium"><label for="shorts-size">  Youth Medium</label><input type="radio" name="shorts-size" value="large"><label for="shorts-size">  Large</label></p>
+                            <p><input type="radio" name="shorts-size" value="youth_large"><label for="shorts-size">  Youth Large</label><input type="radio" name="shorts-size" value="extra_large"><label for="shorts-size">  Extra-Large</label></p>
+                            <p><input type="radio" name="shorts-size" value="small"><label for="shorts-size">  Small</label></p>
+                        </div>  
+                    </div> 
+                    <div class="block">Permission to Play:
+                        <p>
+                            I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                            Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                            accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                            employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                            on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                            sponsored activities, which transportation.
+                            By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                            cancellation policy and agree to its terms. 
+                        </p>
+                        <label for="guardian-signature">Parent/Guardian Signature:</label> <input type="text" name="guardian-signature" placeholder="Signature" required> 
+                        <label  for="signature-date">Date:</label> <input type="date" name="signature-date">
+                        <input type="submit" value="Register">
+                    </div>
+                </div>
+            </form>
+            <div class="footer">
+                <nav class="footer-nav">
+                    <a class="footer-nav-item" href="index.html">Home</a>
+                    <a class="footer-nav-item" href="about.html" >About</a>
+                    <a class="footer-nav-item" href="game_info.html">Information</a>
+                    <a class="footer-nav-item" href="rules.html">Rules</a>
+                    <a class="footer-nav-item" href="registration.html">Registration</a>
+                    <a class="footer-nav-item" href="contact.html">Contact</a>
+                </nav>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.skype.com" target="_blank" class="fa fa-skype"></a>
+                    <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+                    <a href="https://www.google.com" target="_blank" class="fa fa-google"></a>
+                </div>
+            </div> 
+        </div>       
+    </body>
+</html>  
